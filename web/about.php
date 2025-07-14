@@ -17,20 +17,23 @@
 <body>
   <!-- фиксированное верхнее меню -->
   <header class="site-header">
-    <nav class="main-nav">
-      <ul class="nav-links">
-        <li><a href="index.php">Главная</a></li>
-        <li><a href="news.php">Новости</a></li>
-        <li><a href="reviews.php">Отзывы</a></li>
-        <li><a href="signup.php">Запись</a></li>
-        <li><a href="about.php" class="active">О нас</a></li>
-      </ul>
-      <ul class="auth-links">
-        <li><a href="register.php">Зарегистрироваться</a></li>
-        <li><a href="login.php">Войти</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <img src="assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.php" class="active">Главная</a></li>
+                <li><a href="news.php">Новости</a></li>
+                <li><a href="reviews.php">Отзывы</a></li>
+                <li><a href="signup.php">Запись</a></li>
+                <li><a href="about.php">О нас</a></li>
+            </ul>
+            <ul class="auth-links">
+                <li><a href="register.php">Зарегистрироваться</a></li>
+                <li><a href="login.php">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
 
   <!-- Карточка «О компании» -->
   <section class="about-section">

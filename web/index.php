@@ -20,6 +20,9 @@
     <!-- Верхнее фиксированное меню -->
     <header class="site-header">
         <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <img src="assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
             <ul class="nav-links">
                 <li><a href="index.php" class="active">Главная</a></li>
                 <li><a href="news.php">Новости</a></li>

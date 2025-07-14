@@ -17,20 +17,23 @@
 <body>
   <!-- фиксированное верхнее меню -->
   <header class="site-header">
-    <nav class="main-nav">
-      <ul class="nav-links">
-        <li><a href="index.php">Главная</a></li>
-        <li><a href="news.php">Новости</a></li>
-        <li><a href="reviews.php">Отзывы</a></li>
-        <li><a href="signup.php" class="active">Запись</a></li>
-        <li><a href="about.php">О нас</a></li>
-      </ul>
-      <ul class="auth-links">
-        <li><a href="register.php">Зарегистрироваться</a></li>
-        <li><a href="login.php">Войти</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <img src="assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.php" class="active">Главная</a></li>
+                <li><a href="news.php">Новости</a></li>
+                <li><a href="reviews.php">Отзывы</a></li>
+                <li><a href="signup.php">Запись</a></li>
+                <li><a href="about.php">О нас</a></li>
+            </ul>
+            <ul class="auth-links">
+                <li><a href="register.php">Зарегистрироваться</a></li>
+                <li><a href="login.php">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
 
   <!-- Форма записи -->
   <section class="signup-section" style="margin:100px auto 60px; max-width:600px; padding:20px; background:#fff; border-radius:var(--border-radius); box-shadow:0 2px 5px rgba(0,0,0,0.1);">
