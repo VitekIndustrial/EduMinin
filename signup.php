@@ -1,0 +1,114 @@
+<?php
+// signup.php — Страница записи на курс
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Запись на курс — Учебный центр</title>
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-kuh6GZlN8YYNV3CFyraYszEEiQxhT1VgezjuV3zw+FfLMKktlK6KaO5y+6ZT+0IY68PfQWda+E3bfUhBru7W2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- фиксированное верхнее меню -->
+  <header class="site-header">
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <img src="assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.php" class="active">Главная</a></li>
+                <li><a href="news.php">Новости</a></li>
+                <li><a href="reviews.php">Отзывы</a></li>
+                <li><a href="signup.php">Запись</a></li>
+                <li><a href="about.php">О нас</a></li>
+            </ul>
+            <ul class="auth-links">
+                <li><a href="register.php">Зарегистрироваться</a></li>
+                <li><a href="login.php">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <!-- Форма записи -->
+  <section class="signup-section" style="margin:100px auto 60px; max-width:600px; padding:20px; background:#fff; border-radius:var(--border-radius); box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+    <h2 style="text-align:center; color:var(--primary-2); margin-bottom:20px;">Записаться на курс</h2>
+    <form action="submit_signup.php" method="post">
+      <div class="form-group" style="margin-bottom:15px;">
+        <label for="fullname" style="display:block; margin-bottom:5px; font-weight:500;">ФИО</label>
+        <input type="text" id="fullname" name="fullname" required
+               style="width:100%; padding:10px; border:1px solid #ccc; border-radius:var(--border-radius);">
+      </div>
+      <div class="form-group" style="margin-bottom:15px;">
+        <label for="phone" style="display:block; margin-bottom:5px; font-weight:500;">Телефон</label>
+        <input type="tel" id="phone" name="phone" required
+               style="width:100%; padding:10px; border:1px solid #ccc; border-radius:var(--border-radius);">
+      </div>
+      <div class="form-group" style="margin-bottom:15px;">
+        <label for="email" style="display:block; margin-bottom:5px; font-weight:500;">Email</label>
+        <input type="email" id="email" name="email" required
+               style="width:100%; padding:10px; border:1px solid #ccc; border-radius:var(--border-radius);">
+      </div>
+      <div class="form-group" style="margin-bottom:25px;">
+        <label for="course" style="display:block; margin-bottom:5px; font-weight:500;">Курс</label>
+        <select id="course" name="course" required
+                style="width:100%; padding:10px; border:1px solid #ccc; border-radius:var(--border-radius);">
+          <option value="" disabled selected>Выберите курс</option>
+          <option value="1c">1С обучение</option>
+          <option value="python">Python</option>
+          <option value="cpp_csharp">C++/C#</option>
+          <!-- добавьте другие курсы при необходимости -->
+        </select>
+      </div>
+      <button type="submit"
+              style="width:100%; padding:15px; border:none; border-radius:var(--border-radius); background:var(--secondaryB-1); color:#fff; font-size:16px; font-weight:600; cursor:pointer; transition:background 0.3s;">
+        Записаться
+      </button>
+    </form>
+  </section>
+
+  <!-- подвал -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-logo-desc">
+        <img src="assets/images/footer-logo.png" alt="Логотип" class="footer-logo">
+        <p>Краткое описание.</p>
+      </div>
+      <div class="footer-links">
+        <a href="catalog.php">Каталог курсов</a>
+        <a href="schedule.php">Расписание</a>
+        <a href="signup.php">Запись</a>
+        <a href="about.php">О нас</a>
+        <a href="reviews.php">Отзывы</a>
+      </div>
+      <div class="footer-centers">
+        <h4>Учебные центры</h4>
+        <p>ул. Ульянова, 1</p>
+        <p>ул. Ульянова, 10а</p>
+        <p>ул. Челюскинцев, 9</p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Все права защищены</div>
+      <div class="footer-policy">
+        <a href="docs/Соглашение на обработку персональных данных.pdf">Соглашение на обработку персональных данных</a>
+        <a href="docs/Политика конфиденциальности.pdf">Политика конфиденциальности</a>
+        <a href="docs/Сведения об образовательной организации.pdf">Сведения об образовательной организации</a>
+        <a href="docs/Информация об оплате.pdf">Информация об оплате</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+        <a href="https://t.me" target="_blank"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
